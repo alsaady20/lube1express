@@ -27,7 +27,8 @@
             <h1>Lube1 Express of Romulus</h1>
             <div class="hours">
                 <a href="#googleMap"><h2>35427 Goddard Rd</h2></a>
-              <h4>Business Hours</h4>
+                <a href="tel:+17342290064"><h3>(734)229-0064</h3></a>
+                <h4>Business Hours</h4>
                 <h4>Monday-Friday: 8am-6pm</h4>
                 <h4>Saturday: 8am-5pm</h4>
                 <h4>Sunday: CLOSED</h4>         
@@ -38,29 +39,46 @@
     <section class="coupon-sect">
       <div class="coupon">
         <form method='POST'>
-          <h3>Subscribe for 10% off and future coupons!</h3>
+            {% block content %}
+          <h3>Subscribe and leave a review for 15% off and future coupons!</h3>
             {{ form.as_p }}
             {% csrf_token %}
             <input type="submit" class="btn btn-primary" value="Submit">
+            {% endblock %}
         </form> 
     </div>
     </section>
 
     <section class="services">
         <h1>Services</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste a accusantium in nobis sequi nulla adipisci maxime facere obcaecati eum, quos earum unde ea deleniti magni maiores pariatur animi?</p>
+        <p>Below are all the services we offer at Lube 1. All services include free car scent and fluid top off</p>
         <div class="row">
             <div class="service-col">
-                <h3>Oil Change</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h3>Instant Oil Change</h3>
             </div>
             <div class="service-col">
                 <h3>Tire Rotation</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
             <div class="service-col">
-                <h3>Transmission Fluid Check</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h3>Transmission/Coolant Flush</h3>
+            </div>
+            <div class="service-col">
+                <h3>Air Filter Check/Change</h3>
+            </div>
+            <div class="service-col">
+                <h3>Cabin Filter Check</h3>
+            </div>
+            <div class="service-col">
+                <h3>Safety Check</h3>
+            </div>
+            <div class="service-col">
+                <h3>A/C Recharge</h3>
+            </div>
+            <div class="service-col">
+                <h3>Battery Replacement</h3>
+            </div>
+            <div class="service-col">
+                <h3>Fuel Injector Cleaner</h3>
             </div>
         </div>
     </section>
