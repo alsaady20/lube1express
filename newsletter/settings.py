@@ -24,9 +24,9 @@ STATIC_DIR = Path(BASE_DIR) / 'static'
 SECRET_KEY = 'django-insecure-118vfljd#_pv)k)kjtj$u&2u*e_%h1gk$z7y=lpded77pcien='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lube1express.herokuapp.com','127.0.0.1']
 
 
 # Application definition
