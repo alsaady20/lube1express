@@ -161,6 +161,9 @@ form {
 }
 #googleMap{
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 #footer{
     width: 100%;
