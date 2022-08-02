@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from basicapp import views
-from django.conf.urls import url
+
 
 urlpatterns = [
-    url(r'^index/',views.index,name='index'),
+    path('',views.index,name='index'),
+    path('users/',include('basicapp.urls')),
     path('admin/', admin.site.urls),
-    url(r'^',include('basicapp.urls')),
-]
+    ]

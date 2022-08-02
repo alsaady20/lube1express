@@ -24,7 +24,7 @@ STATIC_DIR = Path(BASE_DIR) / 'static'
 SECRET_KEY = 'django-insecure-118vfljd#_pv)k)kjtj$u&2u*e_%h1gk$z7y=lpded77pcien='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['lube1express.herokuapp.com','127.0.0.1']
 
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 
-    'whitenoise.middleware.WhiteNoiseMiddleWare',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

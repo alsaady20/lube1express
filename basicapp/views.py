@@ -4,10 +4,10 @@ from django.shortcuts import render
 from basicapp.forms import NewUserForm
 # Create your views here.
 
-def index(request):
-    return render(request,'basicapp/index.html')
-
 def users(request):
+    return render(request,'basicapp/users.html')
+
+def index(request):
 
     form = NewUserForm()
 
@@ -16,7 +16,7 @@ def users(request):
 
         if form.is_valid():
             form.save(commit=True)
-            return index(request)
+            return users(request)
         else:
             print('ERROR FORM INVALID')
-    return render(request,'basicapp/users.html',{'form':form})
+    return render(request,'basicapp/index.html',{'form':form})
