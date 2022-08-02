@@ -144,6 +144,7 @@ h3{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    display: grid;
 }
 .hours{
     font-size: 20px;
