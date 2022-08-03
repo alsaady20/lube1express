@@ -14,13 +14,11 @@
     <section class="header">
         <nav>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#footer">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -38,7 +36,8 @@
       <div class="coupon">
         <form method='POST'>
             {% block content %}
-          <h3>Subscribe and leave a review for 15% off and future coupons!</h3>
+          <h3>Subscribe and leave a review for 10% off and future coupons!</h3>
+          <h3>Best review of August receives an additional 10% off!</h3>
             {{ form.as_p }}
             {% csrf_token %}
             <input type="submit" class="btn btn-primary" value="Submit">
@@ -49,7 +48,7 @@
 
     <section class="services">
         <h1>Services</h1>
-        <p>Below are all the services we offer at Lube 1. All services include free car scent and fluid top off</p>
+        <p>Below are all the services we offer at Lube 1. All services include free car scent and fluid top off.</p>
         <div class="row">
             <div class="service-col">
                 <h3>Instant Oil Change</h3>
@@ -104,9 +103,6 @@
     <section id="footer">
         <h4>Contact Us</h4>
         <p>If you have any questions please contact us at <a href="mailto: admin@lube1romul.us">admin@lube1romul.us</a></p>
-        <!--<div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>-->
         </div>
     </section>
 
