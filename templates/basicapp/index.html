@@ -47,7 +47,6 @@
         <form method='POST'>
             {% block content %}
           <h3>Subscribe and leave a review for 15% off and future coupons!</h3>
-          <h3>Best review of August receives an additional 10% off!</h3>
             {{ form.as_p }}
             {% csrf_token %}
             <input type="submit" class="btn btn-primary" value="Submit">
